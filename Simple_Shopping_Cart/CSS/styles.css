@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.container{
+    border-radius: 10px;
+
+    background-color: rgb(255, 255, 255);
+
+    scroll-snap-type: x mandatory;
+}
+
+.overlay {
+
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+  
+  }
+
+
+ul {
+    list-style: none;
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.nav-link{
+    margin-right: 1em !important;
+    margin-left: 1em !important;
+    color:  #821131;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+.dropdown-menu ul{
+    list-style: none;
+    display: table;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.dropdown-menu li a{
+    padding: 1em;
+    align-items: center;
+    text-align: center
+}
+
+.dropdown-item h5{
+    text-align: center;
+}
+
+.accordion-link{
+    color:  #821131;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: none;
+    
+}
+
+.accordion-link img{
+    margin-left: 2em;
+    
+}
+
+.accordion-link h5{
+    margin-left: 2em !important;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: none;
+    
+}
+
+.accordion-item{
+    margin: 2em !important;
+}
+
+.accordion-body>ul{
+    list-style: none;
+    display: table;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.accordion-body li a{
+    padding: 1em;
+    align-items: center;
+    text-align: center
+
+}
+
+.accordion-body a{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    color: inherit;
+    outline: none;
+    
+  }
+
+#user-navigation{
+    margin-left: 2em !important;
+    justify-content: flex-end;
+}
+
+/*Modal Design for Login and Sign Up*/
+/*--------------START---------------*/
+
+.modal-login {
+	color: #636363;
+}
+
+.modal-login .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+}
+
+.modal-login .modal-header {
+	border-bottom: none;
+	position: relative;
+	justify-content: center;
+}
+
+.modal-login h4 {
+	text-align: center;
+	font-size: 26px;
+}
+
+.modal-login .form-group {
+	position: relative;
+    margin: 1em !important;
+}
+
+.modal-login i {
+	position: absolute;
+	left: 13px;
+	font-size: 18px;
+}
+
+.modal-login .form-control {
+	padding-left: 40px;
+}
+
+.modal-login .form-control:focus {
+	border-color: #821131;
+}
+
+.modal-login .form-control, .modal-login .btn {
+	min-height: 40px;
+	border-radius: 3px; 
+	transition: all 0.5s;
+}
+
+.modal-login .close {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}
+
+.modal-login .forgot-link {
+	color: #821131;
+	float: right;
+}
+
+.modal-login .btn, .modal-login .btn:active {	
+	border: none;
+  	background: #821131 !important;
+	line-height: normal;
+}
+
+.modal-login .btn:hover, .modal-login .btn:focus {
+	background: #b9254f !important;
+}
+
+.modal-login .modal-footer {
+	color: #999;
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 13px;
+	margin-top: -20px;
+	justify-content: center;
+}
+
+.modal-login .modal-footer a {
+	color: #821131;
+}
+
+.bottom-action {
+  	font-size: 14px;
+}
+
+.bottom-action input {
+  	position: relative;
+  	top: 1px;
+}
+
+.form-check-label:hover input ~ .checkmark {
+    background-color: #963a3a;
+  }
+
+.form-check-label input:checked ~ .checkmark {
+    background-color: #821131;
+}
+
+#myModal2 .modal-content {
+    background-color: #821131;
+}
+
+#myModal2 .modal-login .form-control:focus {
+	border-color: #821131;
+}
+
+#myModal2 .modal-login .btn, .modal-login .btn:active {	
+	border: none;
+    background: #b9254f !important;
+	line-height: normal;
+    
+}
+
+#myModal2 .modal-login .btn:hover, .modal-login .btn:focus {
+	background: #5c0025 !important;
+}
+
+#myModal2 .modal-login .modal-footer {
+	color: #c92929;
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 13px;
+	justify-content: center;
+}
+
+#myModal2 .modal-login .modal-footer a {
+	color: #ffffff;
+}
+
+#myModal2 .modal-login {
+	color: #fffcfc;
+}
+
+/*----------------END----------------*/
+/*Modal Design for Login and Sign Up*/
+
+@media screen and (min-width: 766px) {
+
+    .dropdown-menu.show{
+        display: flex;
+        
+    }
+}
+
+@media screen and (min-width: 568px) {
+
+    .dropdown:hover .dropdown-menu{
+        display: flex;
+        margin-top: 0;
+        pointer-events: initial;
+        opacity: 1;
+        transition: opacity .25s ease-in-out;
+    }
+    
+    .dropdown-menu{
+        display: flex;
+        opacity: 0;
+        margin-top: 0;
+        pointer-events: none;
+        transition: opacity .25s ease-in-out;
+    }
+
+    .dropdown-menu.show{
+        display: flex;
+
+    }
+   
+}
+
+
+/*about us page*/
+
+#about-us{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+   text-align: center ;
+   margin-top: 1.5%;
+}
+
+#about-us2{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+   text-align: center ;
+   margin-bottom: 1%;
+}
+
+#bout-us_3{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.1em;
+    text-align: center;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50%; 
+    padding: 15px;     
+}
+
+
+
+/*footer*/
+/* ---------------START--------------- */
+.footer{
+    background-color: #d69d9d;
+}
+
+.col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.footer-col ul li a{
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+}
+/* ---------------END--------------- */
+
+/*Content Card CSS*/
+/* ---------------START--------------- */
+
+.card{
+    border: none; 
+    transform: scale(0.7);
+    transition: 0.8s ease;
+    
+}
+
+.card:hover{
+    transform: scale(0.9);
+}
+
+.card-img-overlay{
+    padding-top: 60%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #ffffff;
+    transform: scale(1);
+
+}
+
+.category-header{
+    text-align: center;
+}
+
+
+/* ---------------END--------------- */
+
+/*Product Card CSS*/
+/* ---------------START--------------- */
+.product-card{
+    text-decoration: none;
+}
+
+.product-card .card-body{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.product-btn{
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    border: 1px #821131;
+    background-color: #821131;
+    min-width: 30px;
+    
+}
+
+.card-text{
+    font-size: 20px;
+}
+
+/* ---------------END--------------- */
+
+/* PRIVACY POLICY */ 
+
+.termCon{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2em;
+    text-align: center;
+   margin-top: 5%;      
+}
+
+.TERMSCodiTitle{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    
+   
+    text-align: justify;
+    margin-right: 15px;
+}
+
+.TermsCondiContentIntro{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 14px;
+    margin-right: 15px;
+    margin-bottom: 1%;
+}
+
+.bg-search{
+    background-color: #efcecb;
+}
+
+
+.add-to-cart-btn{
+    background-color: #efcecb;
+    transform: scale(0.85);
+    transition: 0.8s ease;
+    
+}
+
+.add-to-cart-btn:hover{
+    background-color: #f55180;
+    transform: scale(0.9);
+}
+
+.product-container{
+    border: none; 
+    transform: scale(1);
+    transition: 0.8s ease;
+}
+
+.product-container:hover{
+    transform: scale(1.1);
+}
+
+.register-btn {
+    background-color:#efcecb;
+}
+
+.container-promo{
+    background-color: #efcecb; 
+}
+
+.container-new p{
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.container-new h3{
+    text-align: center;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 766px) {
+    
+    .container-new h3{
+    padding-top: 40%;
+    text-align: center;
+    justify-content: center;
+
+}
+}
+@media screen and (min-width: 568px) {
+    
+    .container-new h3{
+    padding-top: 10%;
+    text-align: center;
+    justify-content: center;
+
+}
+.container-new p{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    justify-content: center;
+    
+}
+}
